@@ -1,6 +1,6 @@
 # ROS2 Healthcare
 
-Welcome to the **ROS2 Healthcare** project! This repository contains ROS 2 packages for healthcare applications, including message definitions, drivers, libraries, tools, and examples.
+Welcome to the **ROS2 Healthcare** project! This repository contains ROS2 packages for healthcare applications, including message definitions, drivers, libraries, tools, and examples.
 
 ## Repository Structure
 
