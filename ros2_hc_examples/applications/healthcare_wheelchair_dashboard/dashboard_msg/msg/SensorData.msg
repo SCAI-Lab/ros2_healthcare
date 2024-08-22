@@ -1,0 +1,6 @@
+builtin_interfaces/Time timestamp
+uint16 number_of_sensors
+string human_readable_timestamp
+Uint16Array[] sensor_reading
+string error_msg
+bool dsub_fail

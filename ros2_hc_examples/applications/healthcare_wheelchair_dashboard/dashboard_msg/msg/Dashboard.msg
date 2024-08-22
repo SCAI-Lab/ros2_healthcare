@@ -1,0 +1,17 @@
+uint8 hr
+uint8 rr
+float32 exe_hr
+float32 exe_per
+float32 lei_hr
+float32 lei_per
+float32 soc_hr
+float32 soc_per
+float32 mob_hr
+float32 mob_per
+float32 tra_hr
+float32 tra_per
+float32 sel_hr
+float32 sel_per
+float32 res_hr
+float32 res_per
+std_msgs/String curadl

@@ -1,0 +1,17 @@
+<library path="lib/dashboard">
+  <class name="Dashboard Interface" type="dashboard.interface.Interface" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A Python GUI plugin for OwlBot.
+    </description>
+    <qtgui>
+      <group>
+        <label>ROSHealth</label>
+        <icon type="theme">folder</icon>
+        <statustip>Interface plugins.</statustip>
+      </group>
+      <label>Dashboard</label>
+      <icon type="theme">mail-read</icon>
+      <statustip>RH Dashboard</statustip>
+    </qtgui>
+  </class>
+</library>

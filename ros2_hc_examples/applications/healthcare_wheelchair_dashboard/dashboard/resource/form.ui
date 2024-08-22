@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RHDashboard</class>
+ <widget class="QWidget" name="RHDashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RHDashboard</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#RHDashboard { background: qradialgradient( cx:0.5 cy:0.5, radius:0.8 fx:0.5, fy:0.5, stop:0 #0e79a5, stop:1 black); }
+    * { color: white; }
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2,0,2,1">
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+   
+
+
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,1">
+      <!-- LOGO : ETH, SCAI, TOHOKU -->
+      <item>
+        <layout class="QHBoxLayout" name="logoLayout" stretch="1,1,1">
+            <!-- ETH LOGO -->
+            <item>
+                <widget class="QLabel" name="logoETH">
+                  <property name="topMargin">
+                    <number>20</number>
+                   </property>
+                  <property name="maximumSize">
+                    <size>
+                    <width>110</width>
+                    <height>40</height>
+                    </size>
+                  </property>
+                  <property name="scaledContents">
+                    <bool>true</bool>
+                  </property>
+                </widget>
+            </item>
+
+
+            <!-- SCAI LOGO -->
+            <item>
+              <widget class="QLabel" name="logoSCAI">
+                <property name="topMargin">
+                  <number>20</number>
+                 </property>
+                <property name="maximumSize">
+                  <size>
+                  <width>100</width>
+                  <height>100</height>
+                  </size>
+                </property>
+                <property name="scaledContents">
+                  <bool>true</bool>
+                </property>
+              </widget>
+          </item>
+
+          <!-- TOHOKU LOGO -->
+          <item>
+            <widget class="QLabel" name="logoTOHOKU">
+              <property name="topMargin">
+                <number>20</number>
+               </property>
+              <property name="maximumSize">
+                <size>
+                <width>100</width>
+                <height>100</height>
+                </size>
+              </property>
+              <property name="scaledContents">
+                <bool>true</bool>
+              </property>
+            </widget>
+        </item>
+
+             
+          
+        </layout>
+      </item> 
+      
+      <!-- 2 Buttons : Activity Widget -->
+      <item>
+        <layout class="QHBoxLayout" name="buttonLayoutActivity" stretch="1,1">
+          
+        </layout>
+      </item> 
+      <!-- Activity Widget-->
+      <item>
+        <layout class="QVBoxLayout" name="activityLayout" stretch="0,1">
+          
+        </layout>
+      </item>
+    </layout>
+    
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="ADLLayout">
+     <property name="leftMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>80</number>
+     </property>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="rightLayout" stretch="1,1,0,1,1,0,1">
+      <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,2">
+              <item>
+                    <widget class="QLabel" name="label">
+                    <property name="maximumSize">
+                      <size>
+                      <width>60</width>
+                      <height>60</height>
+                      </size>
+                    </property>
+                    <property name="text">
+                      <string/>
+                    </property>
+                    <property name="pixmap">
+                      <pixmap>heart-signal.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                      <bool>true</bool>
+                    </property>
+                    </widget>
+              </item>
+              
+              <item>
+                
+                <layout class="QVBoxLayout" name="hr_rr_vlayout" stretch="0,0">
+                  <item>
+                    <widget class="QLabel" name="hrLabel">
+                    <property name="font">
+                      <font>
+                      <pointsize>30</pointsize>
+                      <bold>true</bold>
+                      </font>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                      <width>120</width>
+                      <height>50</height>
+                      </size>
+                    </property>
+                    <property name="styleSheet">
+                      <string notr="true">* {
+                        font-size: 2em;
+                      }</string>
+                    </property>
+                    <property name="text">
+                      <string>HeartRate</string>
+                    </property>
+                    <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                    </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QLabel" name="rrLabel">
+                    <property name="font">
+                      <font>
+                      <pointsize>30</pointsize>
+                      <bold>true</bold>
+                      </font>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                      <width>120</width>
+                      <height>50</height>
+                      </size>
+                    </property>
+                    <property name="text">
+                      <string>RespiratoryRate</string>
+                    </property>
+                    <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                    </property>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+              
+              
+          </layout>
+      </item>
+      <!-- HR History plot-->
+      <item>
+        <layout class="QVBoxLayout" name="historyInfoLayout" stretch="0,1">
+          
+          <item>
+            <layout class="QHBoxLayout" name="hrhistLayout" stretch="1">
+              <property name="leftMargin">
+                <number>20</number>
+              </property>
+              <property name="bottomMargin">
+                  <number>0</number>
+              </property>
+              <!-- <property name="topMargin">
+                <number>0</number>
+              </property> -->
+              <item>
+                  <widget class="QLabel" name="timeLabel">
+                      <property name="text">
+                          <string>HR History</string>
+                      </property>
+                      <property name="font">
+                          <font>
+                            <pointsize>13</pointsize>
+                          </font>
+                      </property>
+                  </widget>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="historyLayout" stretch="1">
+              <property name="topMargin">
+                <number>0</number>
+              </property>
+            </layout>
+          </item>
+        </layout>
+      </item>
+      <!-- 3 Buttons : Biosignals -->
+      <item>
+        <layout class="QHBoxLayout" name="buttonLayout" stretch="1"> <!-- stretch="1,1,1"-->
+          
+        </layout>
+      </item>
+      <!-- Biosignal-->
+      <item>
+        <layout class="QVBoxLayout" name="ecgInfoLayout" stretch="0,1">
+          
+          <item>
+            <layout class="QHBoxLayout" name="ecgTextLayout" stretch="1">
+              <property name="leftMargin">
+                <number>20</number>
+              </property>
+             
+              <property name="bottomMargin">
+                  <number>0</number>
+              </property>
+              <!-- <property name="topMargin">
+                <number>0</number>
+              </property> -->
+              <item>
+                  <widget class="QLabel" name="ecgLabel">
+                      <property name="text">
+                          <string>ECG</string>
+                      </property>
+                      <property name="font">
+                          <font>
+                            <pointsize>13</pointsize>
+                          </font>
+                      </property>
+                  </widget>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="biosignalLayout" stretch="1">
+              <property name="topMargin">
+                <number>0</number>
+              </property>
+            </layout>
+          </item>
+        </layout>
+      </item>
+      <!-- IMU -->
+      <item>
+        <layout class="QVBoxLayout" name="imuInfoLayout" stretch="0,1">
+          
+          <item>
+            <layout class="QHBoxLayout" name="imuTextLayout" stretch="1">
+              <property name="leftMargin">
+                <number>20</number>
+              </property>
+              <property name="bottomMargin">
+                  <number>0</number>
+              </property>
+              <!-- <property name="topMargin">
+                <number>0</number>
+              </property> -->
+              <item>
+                  <widget class="QLabel" name="imuLabel">
+                      <property name="text">
+                          <string>IMU</string>
+                      </property>
+                      <property name="font">
+                          <font>
+                            <pointsize>13</pointsize>
+                          </font>
+                      </property>
+                  </widget>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="imuLayout" stretch="1">
+              <property name="topMargin">
+                <number>0</number>
+              </property>
+            </layout>
+          </item>
+        </layout>
+      </item>
+      <!-- 2 Buttons : Pressure Widget -->
+      <item>
+        <layout class="QHBoxLayout" name="buttonLayoutPW" stretch="1,1">
+          
+        </layout>
+      </item> 
+      <!-- Pressure Widget-->
+      <item>
+        <layout class="QHBoxLayout" name="pressureWidgetLayout" stretch="1">
+          
+        </layout>
+      </item>
+     
+    </layout>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
