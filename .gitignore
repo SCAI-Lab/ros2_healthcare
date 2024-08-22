@@ -1,16 +1,16 @@
-# Compiled class file
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
 
-# BlueJ files
+# BlueJ project files
 *.ctxt
 
-# Mobile Tools for Java (J2ME)
+# Mobile Tools for Java (J2ME) temporary files
 .mtj.tmp/
 
-# Package Files #
+# Package files
 *.jar
 *.war
 *.nar
@@ -19,11 +19,34 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 
+# Build output directories
+/build/
+/install/
+/log/
 
-install/
-log/
-build/
-.vscode
+# IDE specific files and directories
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.swp
+*.swo
+*.swn
+
+# Generated files
+*.tmp
+*.bak
+*.swp
+
+# Application-specific files
+*.iml
+*.gitattributes
