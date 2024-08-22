@@ -7,10 +7,10 @@ The `ros2_hc_examples` repository provides a collection of example applications 
 The `applications` directory includes example applications that showcase systems using biosignals. The current example focuses on a healthcare wheelchair dashboard, which provides real-time visualization and interaction with biosignal data.
 
 - **`healthcare_wheelchair_dashboard/`**  
-  This application serves as a visualization tool for biosignals, tailored for use in a healthcare context, such as monitoring patients in a wheelchair. It includes:
+  This application serves as a visualization tool for raw signals coming from biosensors such as vivalink, mbient wrist band and pressure mat, as well as thier adl classification
   
-  - **`dashboard/`**: Contains the core components and user interface elements for the dashboard.
-  - **`dashboard_msg/`**: Houses the custom messages and communication interfaces used by the dashboard to interact with other ROS 2 nodes.
+- **`topic_visualization/`**  
+  This contains examples and tools for visualizing ROS2 topics related to biosignals.
 
 ### 2. Nodes
 
