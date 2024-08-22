@@ -1,0 +1,4 @@
+float32 hip_flexion
+float32 knee_flexion
+float32 ankle_flexion
+float32 foot_elevation
