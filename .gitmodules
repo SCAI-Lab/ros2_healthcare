@@ -1,0 +1,3 @@
+[submodule "ros2_hc_drv"]
+	path = ros2_hc_drv
+	url = https://github.com/SCAI-Lab/healthcare_sensor_drivers_ros.git
