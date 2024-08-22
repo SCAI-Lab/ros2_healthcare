@@ -2,3 +2,6 @@
 	path = ros2_hc_drv
 	url = https://github.com/SCAI-Lab/healthcare_sensor_drivers_ros.git
 	branch = icra_prep
+[submodule "ros2_hc_lib/hc_adl_classifier"]
+	path = ros2_hc_lib/hc_adl_classifier
+	url = https://github.com/SCAI-Lab/healthcare_adl_classifier.git
