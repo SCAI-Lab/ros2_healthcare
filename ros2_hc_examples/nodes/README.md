@@ -1,4 +1,4 @@
-# healthcare example nodes
+# ros2_hc example nodes
 
 ## Overview
 Examples of subscriber and publisher nodes that uses different messages from ros_healthcare_msg 
