@@ -75,6 +75,12 @@ ros2-healthcare
 │   │   │   ├── external_signals
 │   │   │   │   ├── force
 │   │   │   │   └── pressure
+└── ros2_hc_launch
+│   ├── config
+│   │   └── ros2_hc_params.yaml
+│   └── launch
+│   │   └── ros2_hc_launch.py
+│   └── README.md
 └── ros2_hc_tools
 ```
 ## Setup
