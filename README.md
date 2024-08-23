@@ -27,7 +27,7 @@ ros2-healthcare
 │   │   ├── launch
 │   │   ├── scripts
 │   │   └── sensomative_ros
-│   └── vivalink_ros
+│   └── corsano_ros
 │       ├── config
 │       ├── launch
 │       ├── scripts
