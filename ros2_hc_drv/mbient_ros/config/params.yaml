@@ -1,5 +1,0 @@
-mbient_ros:
-  ros__parameters:
-    # mac_add: "D7:74:20:9A:39:DE"
-    mac_add: "C9:56:04:43:43:86"
-    hci_mac: "00:1A:7D:DA:71:12"
