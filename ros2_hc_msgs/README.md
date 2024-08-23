@@ -1,32 +1,81 @@
-# healthcare_msgs
+# ROS2 Healthcare msgs
 
-This repository contains ROS 2 message definitions for biosensor data, which are organized into subfolders for easy access and management. 
+This repository contains ROS2 message definitions for biosensor data, organized into subfolders for easy access and management. 
 
-The message files are divided into the following subfolders:
 
-- **Biosignals:** 
+## `ros2_hc_msgs` Directory Structure
+
+The `ros2_hc_msgs` directory contains message definitions organized into various categories. Each category is designed to group related message files, making it easier to manage and use the messages in ROS 2 applications. Below is the detailed hierarchy and description of each folder:
+
+## Directory Structure
+
+```
+msgs/
+├── biometric/
+│   ├── behavioral/
+│   │   └── mood/
+│   └── physiological/
+│       ├── adl/
+│       ├── gait/
+│       └── posture/
+├── biosensing/
+│   ├── raw_biosignals/
+│   │   ├── bcg/
+│   │   ├── ecg/
+│   │   ├── eda/
+│   │   ├── eeg/
+│   │   ├── emg/
+│   │   ├── eog/
+│   │   ├── icg/
+│   │   ├── ppg/
+│   └── derived_biosignals/
+│       ├── co/
+│       ├── hr/
+│       ├── hrv/
+│       ├── rr/
+│       └── sv/
+├── hardware/biosensors
+│   ├── devices/
+│   └── filters/
+├── physical_sensor/
+│   ├── derived_signals/
+│   │   ├── elevation_angle/
+│   │   ├── joint_angles/
+│   │   ├── joint_angular_velocity/
+│   │   ├── joint_moments/
+│   │   ├── pose/
+│   │   └── steps/
+│   └── external_signals/
+│       ├── force/
+│       └── pressure/
+
+```
+
+The message files are divided into the following directories:
+
+- **Biometrics:**
+
+  This directory includes message files for derived biometrics, higher-level measurements or indicators obtained from the biosignals.
+
+- **Biosensing:** 
 
   This folder contains message files related to the biosignals captured by the biosensor.
 
-- **Derived Biosignals:**
+- **Hardware:**
 
-  Here, you will find message files for derived biosignals. Meaning that they are derived or computed from biosignals.
+  The hardware folder contains message files related to the physical components and devices used in biosensing.
 
-- **Derived Biometrics:**
-
-  This folder includes message files for derived biometrics, which are higher-level measurements or indicators obtained from the biosignals.
-
-- **Sensors:** 
+- **Physical Sensors:** 
 
   The message files specific to the sensor hardware used for capturing the biosignals are stored in this folder.
 
 ## Structure
 
-By organizing the message files into separate subfolders and defining a clear and standardised structure, this repository aims to enhance the clarity and ease of use when working with biosensor data within the ROS framework. 
+By organizing the message files into separate subfolders and defining a clear and standardised structure, this repository aims to enhance the clarity and ease of use when working with biosensor data within the ROS2 framework. 
 
 ### Header 
 
-Each signal specific header consists of a standart header, which includes common/mandatory fields within the subfolder. There are slight differences between the standard headers of the subfolders. Additionally, the header is supplemented with signal-specific parameters that provide additional information relevant to the specific biosignal being captured.
+Each signal-specific header consists of a standard header, which includes common/mandatory fields within the subfolder. There are slight differences between the standard headers of the subfolders. Additionally, the header is supplemented with signal-specific parameters that provide additional information relevant to the specific biosignal being captured.
 
 
 **Header Biosignals**
@@ -73,30 +122,3 @@ string[]     model_type                  #Machine learning model type
 string[]     model_version               #The version the model is trained with/ From what data was the model created 
 
 ```
-
-
-## Usage
-
-To use the healthcare messages in your ROS 2 project: 
-- Clone the repo
-  ```
-  git clone https://github.com/ros-healthcare/healthcare-msgs.git
-  ```
-- Install python requirements with 
-  ```
-  pip install -r requirements.txt 
-  ```
-- Build it and source the installed package:
-  ```
-  colcon build
-  source install/setup.bash
-  ```
-
-After this step you can import the desired messages as follows: 
-
-```
-from healthcare_msgs.msg import desired_msg
-```
-
-You can find publisher and subscriber examples for the messages at the [ROS Healthcare Examples repo](https://github.com/SCAI-Lab/healthcare_examples/).
-
