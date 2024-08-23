@@ -1,4 +1,4 @@
-# `ros2_hc_launch`
+# ROS2 Healthcare Launch
 
 This directory contains example configuration and launch files for the ros2_hc system. These examples are designed to help you get started with creating your own launch configs and parameter files.
 

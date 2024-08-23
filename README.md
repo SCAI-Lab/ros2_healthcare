@@ -85,6 +85,58 @@ ros2-healthcare
 ```
 ## Setup
 
+
+
+We then need to clone the repositories into our workspace
+
+```
+cd ros2_ws/src
+git clone --recurse-submodules git@github.com:SCAI-Lab/ros2_healthcare.git
+cd ..
+```
+then build and source the workspace 
+
+```
+colcon build --symlink-install
+source install/setup.bash
+```
+
+## Running the Wrappers
+
+We have included wrappers for several devices in the `ros2_hc_drv` repository.
+
+Each wrapper receives either a device mac address or a file path as a parameter. Feel free to change the parameters in the respective config/params.yaml
+file for each device wrapper.
+
+To run the wrappers for BLE devices, make sure the PC Bluetooth is on, the device is charged and is nearby, then run the wrapper
+
+by running ```ros2 launch package_name launch_file```  
+
+To run our dashboard, we will need to connect to the mbient sensor and to the sensomative mat, for this run:
+
+```
+ros2 launch mbient_ros mbient_node.launch.py
+```
+
+in a new terminal, source the repo and run the sensomative launch file
+
+```
+source install/setup.bash
+ros2 launch sensomative_ros sensomative_node.launch.py
+```
+
+## Running ADL Classifier 
+
+In order to have our model classify the data coming from the wearable devices, we need to run the healthcare_adl_classifier
+
+To do this open a new tab, source the repo and run
+
+```
+source install/setup.bash
+ros2 run healthcare_adl_classifier pub_adl
+```
+
+
 We first need to make sure our python environment is well set up
 
 simply run ```pip install -r requirements.txt``` to install the dependencies
