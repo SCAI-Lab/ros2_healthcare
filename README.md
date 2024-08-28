@@ -9,6 +9,7 @@ Welcome to the **ROS2 Healthcare** project! This repository contains ROS2 packag
 - **`ros2_hc_examples`**: Example applications and use cases demonstration.
 - **`ros2_hc_lib`**: Libraries
 - **`ros2_hc_msgs`**: Contains all message definitions and structure for biosensor data.
+- **`ros2_hc_launch`**: Example launch files
 - **`ros2_hc_tools`**: Tools and utilities for development and operation.
 
 
