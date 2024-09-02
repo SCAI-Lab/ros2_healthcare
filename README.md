@@ -1,3 +1,7 @@
+<h1 align="center">
+<img src="assets/roshc_logo.png" width="550">
+</h1><br>
+
 # ROS2 Healthcare
 
 Welcome to the **ROS2 Healthcare** project! This repository contains ROS2 packages for healthcare applications, including message definitions, drivers, libraries, tools, and examples. **`ros2_hc`** serves as an example of how one can use biosignals coming from wearable medical devices like Vivalink and mbient wristbands to track patients' activities. In addition, we have developed an Activities of Daily Living (ADL) classifier that will help doctors visualize their patients' daily activity patterns and consequently help them recommend a suitable routine. This can be visualised through our `healthcare_wheelchair_dashboard`.
