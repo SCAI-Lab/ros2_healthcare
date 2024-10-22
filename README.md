@@ -35,7 +35,7 @@ ros2-healthcare
 │       ├── config
 │       ├── launch
 │       ├── scripts
-│       └── vivalink_ros
+│       └── corsano_ros
 ├── ros2_hc_examples
 │   ├── applications
 │   │   ├── healthcare_wheelchair_dashboard
