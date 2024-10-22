@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="assets/roshc_logo.png" width="550">
+<img src="assets/ROS2HC Logo-01.png" width="550">
 </h1><br>
 
 # ROS2 Healthcare
@@ -195,3 +195,12 @@ source install/setup.bash
 ros2 run healthcare_adl_classifier pub_adl
 ```
 
+
+# Acknowledgments
+
+<!-- ![JST Moonshot R&D Logo](https://example.com/jst_logo.png)  ![ETH-SPS Logo](https://example.com/eth_logo.png) -->
+
+This work was partially supported by:
+
+- The JST Moonshot R&D Program [Grant Number JPMJMS2034]
+- The ETH-SPS Digital Transformation in Personalized Health Care for SCI [Grant Number: 2021-HS-348]
