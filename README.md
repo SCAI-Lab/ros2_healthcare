@@ -205,3 +205,7 @@ This work was partially supported by:
 
 - The JST Moonshot R&D Program [Grant Number JPMJMS2034]
 - The ETH-SPS Digital Transformation in Personalized Health Care for SCI [Grant Number: 2021-HS-348]
+
+<h1 align="center">
+<img src="assets/Acknowledgement_JST_2.png" width="550">
+</h1><br>
