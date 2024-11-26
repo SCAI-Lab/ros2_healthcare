@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>ros_healthcare_msg</name>
+  <name>ros2_hc_msgs</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="kupper.lucas@gmail.com">Lucas Kupper</maintainer>
